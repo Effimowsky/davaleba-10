@@ -9,19 +9,126 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header" "header"
+    "footer" "footer";
 }
 header {
   background-color: #0020f4;
+  height: 387.56px;
+  grid-area: header;
 }
 .logo {
   width: 115px;
   height: 65px;
+  margin: 40px 50px;
+  grid-area: header;
+}
+.logo .navbar {
+  align-items: center;
 }
 ul {
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
+  grid-area: header;
+  margin: 64px 30px;
 }
 a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 16px;
+}
+.navbar-contact {
+  display: flex;
+  color: #171717;
+  background-color: #ffffff;
+  margin-right: 10px;
+  border-radius: 28px;
+  width: 75px;
+  height: 25px;
+}
+footer {
+  background-color: #0a22f4;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-area: footer;
+}
+.contact {
+  margin-left: 50px;
+}
+.contact-2 {
+  display: flex;
+  margin-top: 70px;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+.contact-info2 {
+  display: flex;
+  align-items: center;
+  margin-left: 98px;
+}
+.contact img {
+  background-color: #ffffff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+}
+.contact span {
+  color: #ffffff;
+  font-size: 22px;
+  margin-left: 20px;
+}
+h3 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 58px;
+  color: #ffffff;
+  width: 463px;
+  height: 99px;
+}
+.footer-text {
+  margin-top: 206px;
+  font-size: 16px;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+.form-field input {
+  display: grid;
+  width: 463px;
+  height: 60px;
+  margin-left: 50px;
+  margin-bottom: 81px;
+  background-color: #0a22f4;
+  border: none;
+  border-bottom: 0.5px solid white;
+}
+.sent-box {
+  background-color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 28px;
+  font-size: 16px;
+  margin-left: 380px;
+  width: 120px;
+  height: 35px;
+  text-align: center;
+}
+.footer-text-images {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 1000px;
 }
