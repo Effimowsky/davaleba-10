@@ -10,3 +10,18 @@
   width: 100%;
   margin: 0 auto;
 }
+header {
+  background-color: #0020f4;
+}
+.logo {
+  width: 115px;
+  height: 65px;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
